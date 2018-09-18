@@ -1,0 +1,19 @@
+
+#one {
+    margin-bottom: 2%;
+}
+
+.jumbotron {
+    text-align: center; 
+}
+
+.mapHere {
+    background-color: orange;
+    padding-bottom: 300px;
+    color: white;
+    text-align: center;
+}
+
+.barInfo {
+    margin-top: 8%;
+}
