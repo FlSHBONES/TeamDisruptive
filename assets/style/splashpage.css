@@ -1,0 +1,46 @@
+body {
+    background-image: url('../images/bar-463476_1280.jpg');
+    background-size: cover;
+    background-position-y: 2%;
+}
+
+.navbar-dark {
+background-color: rgb(32, 32, 32);
+}
+
+#content {
+    margin-top: 10%;
+    color: white;
+    width: 800px;
+}
+
+.jumbotron {
+    background-color: rgb(32, 32, 32, 0.9);
+    color: white;
+    height: 500px;
+
+}
+
+#inputFields {
+ margin: auto;
+ width: 650px;   
+}
+
+#submit {
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+    background-color: grey;
+    border: none;
+}
+
+.btn {
+    background-color: grey;
+    border: none;
+}
+
+.modal {
+  color: rgb(32, 32, 32);
+
+}
+
