@@ -1,112 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drink n Think</title>
-<!-- Link to Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<!-- Link to Style Sheet -->
-<link rel="stylesheet"  href="assets/style/style.css">
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Link to Style Sheet -->
+    <link rel="stylesheet" href="assets/style/style.css">
 
 </head>
+
 <body>
 
     <div class="container-fluid">
         <!-- JUMBOTRON HEADING -->
-            <div class="jumbotron"> 
-              <h1 id="title">DRINK N THINK!</h1>
-            </div>
-            
-            <!-- FIRST ROW OF DATA -->
-            <div class="row" id="one">
-                <!-- BEGIN MAP -->
-                <div class="col-8">
-                    <!-- Title -->
-                    <h3 id="mapHeaderTitle">This is the map!</h3>
-                    <!-- Placeholder image of map -->
-                    <div class="mapHere"><h1>MAP WILL BE HERE</h1></div>
-                    <!-- <img src="assets/images/Google-neighborhoods.jpg" alt="Generic placeholder image of map" class="img-fluid" id="mapImg" >    -->
-               <!-- END MAP -->
+        <div class="jumbotron">
+            <h1 id="title">DRINK N THINK!</h1>
+        </div>
+
+        <!-- FIRST ROW OF DATA -->
+        <div class="row" id="one">
+            <!-- BEGIN MAP -->
+            <div class="col-8">
+                <!-- Title -->
+                <h3 id="mapHeaderTitle">This is the map!</h3>
+                <!-- Placeholder image of map -->
+                <div class="mapHere">
+                    <h1>MAP WILL BE HERE</h1>
                 </div>
-                <!-- BEGIN CRIME DATA -->
-                <div class="col-4">
-                    <div class="barInfo">
-                        <h4> Bar information </h4>
-                        <h6>Name of bar</h6>
-                        <p> This is the information! <br> Google rating: 5/5 <br> Address: 1234 Street St.</p>
-                    </div>
+                <!-- <img src="assets/images/Google-neighborhoods.jpg" alt="Generic placeholder image of map" class="img-fluid" id="mapImg" >    -->
+                <!-- END MAP -->
+            </div>
+            <!-- BEGIN CRIME DATA -->
+            <div class="col-4">
+                <div class="barInfo">
+                    <h4> Bar information </h4>
+                    <h6 id="bar-name-display">Name of bar</h6>
+                    <p>This is the information!</p>
+                    <p id="bar-rating-display">Google rating: 5/5</p>
+                    <p id="bar-address-display">Address: 1234 Street St.!</p>
                 </div>
             </div>
-            
-            <!-- SECOND ROW OF DATA -->
-            <div class="row">
-                
-                <div class="col-6">
-                    <div class="table-responsive-sm">
+        </div>
+
+        <!-- SECOND ROW OF DATA -->
+        <div class="row">
+
+            <div class="col-6">
+                <div class="table-responsive-sm">
                     <!-- Title -->
-                        <h3 id="crimeDataTitle">Crime Data</h3>
+                    <h3 id="crimeDataTitle">Crime Data</h3>
                     <!-- Placeholder table of crime data -->
                     <!-- Begin table // this can be a block of text also -->
                     <table class="table" id="crime-data">
-                            <!-- Begin table head -->
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="column">HEADER</th>
-                                    <th scope="col" class="column">HEADER</th>
-                                    <th scope="col" class="column">HEADER</th>
-                                    <th scope="col" class="column">HEADER</th>
-                                    
-                                </tr>
-                            </thead>
-                            <!-- Begin table body -->
-                            <tbody>
-                                <tr>
-                                    <td id="theTrainName"> INFO </td>
-                                    <td id="theDestination"> INFO </td>
-                                    <td id="theFrequency"> INFO </td>
-                                    <td id="theNextArrival"> INFO </td>
-                       
-                            </tbody>
-                    <!-- End table -->
+                        <!-- Begin table head -->
+                        <thead>
+                            <tr>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+
+                            </tr>
+                        </thead>
+                        <!-- Begin table body -->
+                        <tbody>
+                            <tr>
+                                <td id="theTrainName"> INFO </td>
+                                <td id="theDestination"> INFO </td>
+                                <td id="theFrequency"> INFO </td>
+                                <td id="theNextArrival"> INFO </td>
+
+                        </tbody>
+                        <!-- End table -->
                     </table>
-                    </div>
-                    </div>
-
-                    <div class="col-6">
-                     <div class="table-responsive-sm">
-                            <!-- Title -->
-                            <h3 id="locationsViewedTitle">Locations Viewed</h3>
-                            <!-- Placeholder table of crime data -->
-                            <!-- Begin table // this can be a block of text also -->
-                            <table class="table" id="crime-data">
-                                    <!-- Begin table head -->
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" class="column">HEADER</th>
-                                            <th scope="col" class="column">HEADER</th>
-                                            <th scope="col" class="column">HEADER</th>
-                                            <th scope="col" class="column">HEADER</th>
-                                            <th scope="col" class="column">HEADER</th>
-                                        </tr>
-                                    </thead>
-                                    <!-- Begin table body -->
-                                    <tbody>
-                                        <tr>
-                                            <td id="theTrainName"> INFO </td>
-                                            <td id="theDestination"> INFO </td>
-                                            <td id="theFrequency"> INFO </td>
-                                            <td id="theNextArrival"> INFO </td>
-                                            <td id="thisManyMinutesAway"> INFO </td>
-                                    </tbody>
-                            <!-- End table -->
-                            </table>
-                        </div>
-                        </div>
+                </div>
             </div>
-     </div>
-                
 
+            <div class="col-6">
+                <div class="table-responsive-sm">
+                    <!-- Title -->
+                    <h3 id="locationsViewedTitle">Locations Viewed</h3>
+                    <!-- Placeholder table of crime data -->
+                    <!-- Begin table // this can be a block of text also -->
+                    <table class="table" id="crime-data">
+                        <!-- Begin table head -->
+                        <thead>
+                            <tr>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+                            </tr>
+                        </thead>
+                        <!-- Begin table body -->
+                        <tbody>
+                            <tr>
+                                <td id="theTrainName"> INFO </td>
+                                <td id="theDestination"> INFO </td>
+                                <td id="theFrequency"> INFO </td>
+                                <td id="theNextArrival"> INFO </td>
+                                <td id="thisManyMinutesAway"> INFO </td>
+                        </tbody>
+                        <!-- End table -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
 </body>
+
 </html>
