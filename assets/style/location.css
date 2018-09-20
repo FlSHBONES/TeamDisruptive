@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/bar-463476_1280.jpg');
+    background-image: url('../images/city-peds-3.png');
     background-size: cover;
     background-position-y: 2%;
 }
@@ -17,7 +17,7 @@ background-color: rgb(32, 32, 32);
 .jumbotron {
     background-color: rgb(32, 32, 32, 0.9);
     color: white;
-    height: 500px;
+    height: 300px;
 
 }
 
@@ -43,3 +43,4 @@ background-color: rgb(32, 32, 32);
   color: rgb(32, 32, 32);
 
 }
+
