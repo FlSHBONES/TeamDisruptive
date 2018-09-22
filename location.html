@@ -15,8 +15,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark">
-        <!-- Navbar content -->
+    <nav class="navbar navbar-default" role="navigation">
+        <ul class="nav navbar-nav navbrand">
+            <a class="navbar-brand" href="#">Drink n Think</a>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <a href="#">Hello, Brooke!</a>
+        </ul>
     </nav>
 
     <div class="container" id="content">
@@ -25,7 +31,7 @@
 
             <div class="row" id="inputFields">
                 <label for="inputLocation">Enter location</label>
-                <input type="text" class="form-control" id="inputLocation" placeholder="Fishtown">
+                <input type="location" class="form-control" id="inputLocation" placeholder="Fishtown">
             </div>
 
             <div class="row btn" id="submit">
@@ -68,7 +74,6 @@
         </div>
     </div>
     </div>
-    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

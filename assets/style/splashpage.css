@@ -3,10 +3,9 @@ body {
     background-size: cover;
     background-position-y: 2%;
 }
-
-.navbar-dark {
-background-color: rgb(32, 32, 32);
-}
+.navbar {
+    background-color: rgb(32, 32, 32, 0.9);
+    }
 
 #content {
     margin-top: 10%;
@@ -42,4 +41,8 @@ background-color: rgb(32, 32, 32);
 .modal {
   color: rgb(32, 32, 32);
 
+}
+
+a {
+    color: white;
 }

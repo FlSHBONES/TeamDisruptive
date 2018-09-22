@@ -78,7 +78,7 @@ $(document).ready(function () {
         var lat = response.results[0].geometry.location.lat;
         var lng = response.results[0].geometry.location.lng;
         var location = "location=" + lat + "," + lng
-        var targetURL2 = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" + location + "&rankby=distance&type=bar" + key;
+        var targetURL2 = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" + location + "&radius=800&type=bar" + key;
         var queryURL2 = proxyURL + targetURL2;
 
         $.ajax({
@@ -90,6 +90,9 @@ $(document).ready(function () {
 
             for (var i = 0; i < response2.results.length; i++) { 
                 console.log(response2.results[i].name)
+                // console.log(response2.results[i].rating)
+                // console.log(response2.results[i].vicinity)
+                // console.log(response2.results[i].geometry.location)
             }
             console.log(response2.results)
         
