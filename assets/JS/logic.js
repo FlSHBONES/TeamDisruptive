@@ -11,7 +11,6 @@ firebase.initializeApp(config);
 
 console.log("Initial");
 
-var email = "";
 var password = "";
 var firstName = "";
 var lastName = "";
@@ -26,63 +25,84 @@ $(document).ready(function() {
   $("#submit").on("click", function() {
       console.log("firing");
 
-      email = $("#inputEmail").val().trim();
+      userName = $("#inputEmail").val().trim();
       password = $("#inputPassword").val().trim();
 
-      if (!email || !password) {
-        return console.log('email and password required')
+      if (!userName || !password) {
+        return console.log('userName and password required')
       }
 
-      console.log(email);
+      console.log(userName);
       console.log(password);
 
-      // Sign in for User
-      firebase.auth().signInWithEmailAndPassword(email, password)
-        .catch(function(error) {
-          // errors handled here
-          var errorCode = error.code;
-          var errorMessage = error.Message;
-          console.log('signIn Error', error);
-        }); 
-    });
+      database.ref("/userBase").on("value", function(snapshot) {
+        console.log(snapshot.val());
+        if (snapshot.child("userName").exists() && snapshot.child("password").exists()) {
+          if (snapshot.child("password") == password) {
+            console.log("Hell yeah man");
+            window.location.href = "location.html";
+          } else if (snapshot.child("password") != password) {
+            console.log("No Login Fer YEH");
+          }
+          // EXAMPLE QUERYING OF FIREBASE:
+          // var ratingRef = firebase.database().ref("ratings/");
+
+          // ratingRef.orderByValue().on("value", function(data) {
+             
+          //    data.forEach(function(data) {
+          //       console.log("The " + data.key + " rating is " + data.val());
+          //    });
+             
+          // });
+        }
+      });
+  });
 
   // Register User
   $("#submitReg").on("click", function() {
 
-    email = $("#inputEmailReg").val().trim();
     password = $("#inputPasswordReg").val().trim();
+    verifyPassword = $("#inputConfirmPasswordReg").val().trim();
     firstName = $("#inputFirstNameReg").val().trim();
     lastName = $("#inputLastNameReg").val().trim();
     userName = $("#inputUserNameReg").val().trim();
     // verifyPassword = $("inputConfirmPasswordReg").val().trim();
 
-    if (!email || !password) {
-      return console.log('email and password required')
+    if (!userName || !password) {
+      return console.log('username and password required')
     }
 
-    console.log(email);
+    console.log(password);
+    console.log(verifyPassword);
+
+    if (password != verifyPassword) {
+      return console.log('passwords do not match')
+    }
+
+    if ((document.getElementById("ageCheck").checked) == true) {
+      console.log('21+ age verify');
+    } else {
+      return console.log('Please Verify Age')
+    }
+
+    console.log(userName);
     console.log(password);
     console.log(firstName);
     console.log(lastName);
     console.log(userName);
     console.log(verifyPassword);
 
+    database.ref("/userBase").push ({
+      password: password,
+      firstName: firstName,
+      lastName: lastName,
+      userName: userName
+    });
+
+    console.log("user added");
+
   });
 });
-    // app.register = function() {
-    //   var email = app.email;
-    //   var password = app.password;
-
-
-      // Register User
-      // firebase.auth().createUserWithEmailAndPassword(email,password)
-      //   .catch(function(error) {
-      //     // errors handled here
-      //     var errorCode = error.code;
-      //     var errorMessage = error.Message;
-      //     console.log('signIn Error, error');
-      //   });
-      // };
 
       // app.signOut = function() {
       //   //Sign out
