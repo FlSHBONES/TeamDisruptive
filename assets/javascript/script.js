@@ -40,27 +40,20 @@ $(document).ready(function () {
     //     });
     // });
 
-    // NEARBY SEARCH (Requires lat and long)=====
+
 
 
     // AIzaSyAYaTv-hKyNAp7NAQ1mKdP_F5-vpkfouoU
 
-    // var queryurl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyAYaTv-hKyNAp7NAQ1mKdP_F5-vpkfouoU"
 
-    // $.ajax({
-    //     url: queryurl,
-    //     method: "Get"
-    // }).then(function (response) {
 
-    //     console.log(response);
+    $("#submit").on("click", function () {
+        console.log($("#inputLocation").val())
+    });
 
-    // });
+    // TEXT SEARCH =====
 
-    // ==========================================
-
-    // TEXT SEARCH (Requires lat and long)=====
-
-    var searchQuery = "query=" + "fishtown, philadelphia"
+    var searchQuery = "query=" + $("#inputLocation").val().trim() +", philadelphia"
     var key = "&key=AIzaSyAYaTv-hKyNAp7NAQ1mKdP_F5-vpkfouoU"
     var proxyURL = "https://cors-anywhere.herokuapp.com/"
     var targetURL1 = "https://maps.googleapis.com/maps/api/place/textsearch/json?" + searchQuery + key
@@ -75,6 +68,8 @@ $(document).ready(function () {
         console.log(response.results[0].geometry.location.lat);
         console.log(response.results[0].geometry.location.lng);
 
+        // NEARBY SEARCH (Requires lat and long)
+
         var lat = response.results[0].geometry.location.lat;
         var lng = response.results[0].geometry.location.lng;
         var location = "location=" + lat + "," + lng
@@ -88,16 +83,18 @@ $(document).ready(function () {
 
             console.log(targetURL2)
 
-            for (var i = 0; i < response2.results.length; i++) { 
+            for (var i = 0; i < response2.results.length; i++) {
                 console.log(response2.results[i].name)
                 // console.log(response2.results[i].rating)
                 // console.log(response2.results[i].vicinity)
                 // console.log(response2.results[i].geometry.location)
             }
             console.log(response2.results)
-        
+
 
         });
+
+        // ==========================================
 
     });
 
