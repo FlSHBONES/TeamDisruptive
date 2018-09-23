@@ -1,45 +1,109 @@
 body {
-    background-image: url('../images/bar-463476_1280.jpg');
+    background-image: url('../images/bar-463476_1280.jpg'); 
     background-size: cover;
-    background-position-y: 2%;
+    background-position-y: 2%; 
+    background-repeat: no-repeat;
 }
-
-.navbar-dark {
-background-color: rgb(32, 32, 32);
-}
+.navbar {
+    background-color: rgb(32, 32, 32, 0.9);
+    }
 
 #content {
-    margin-top: 10%;
+    margin-top: 2%;
     color: white;
-    width: 800px;
+    max-width: 800px;
 }
 
 .jumbotron {
     background-color: rgb(32, 32, 32, 0.9);
+    /* background-image: url("../images/wood_1_@2X.png"); */
     color: white;
-    height: 500px;
 
+}
+
+#signUpBtn {
+    /* line-height: 1; */
+    /* margin: auto; */
+    /* width: 650px;    */
+    /* line-height: 3; */
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2%;
 }
 
 #inputFields {
  margin: auto;
- width: 650px;   
+ margin-top: 0%;
+ width: 95%;   
+ line-height: 3;
+ margin-bottom: 2%;
+}
+
+#label {
+margin-bottom: 0%;
+}
+
+#lead {
+    margin: auto;
+    width: 95%;   
+    line-height: 1;
 }
 
 #submit {
     float: right;
-    margin-top: 2%;
     margin-right: 3%;
-    background-color: grey;
-    border: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
 }
 
-.btn {
-    background-color: grey;
-    border: none;
-}
+
 
 .modal {
   color: rgb(32, 32, 32);
 
 }
+
+a {
+    color: white;
+    text-decoration-color: rgba(122, 122, 122, 0.9);
+}
+
+a:hover {
+    color: rgba(122, 122, 122, 0.9);
+
+}
+
+.title {
+    font-family: 'Vast Shadow', cursive;
+    font-size: 108px;
+    line-height: 0.75;
+    text-align: center;
+
+
+}
+
+.bigTitle {
+    font-family: 'Vast Shadow', cursive;
+    font-size: 175px;
+    line-height: .75;
+    text-align: center;
+
+}
+
+.subTitle {
+    font-family: 'Sacramento', cursive;
+ color: rgb(224, 191, 0);
+text-align: center;
+line-height: 1.5;
+}
+
+hr {
+    background-color: white;
+}
+
+.emoji {
+    font-size: 100px;
+    text-align: center;
+}
+

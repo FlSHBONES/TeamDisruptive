@@ -1,46 +1,89 @@
 body {
     background-image: url('../images/city-peds-3.png');
+    background-image: url('../images/wya.png');
     background-size: cover;
     background-position-y: 2%;
 }
 
-.navbar-dark {
-background-color: rgb(32, 32, 32);
+.navbar {
+background-color: rgb(32, 32, 32, 0.9);
 }
 
 #content {
     margin-top: 10%;
     color: white;
-    width: 800px;
+    max-width: 800px;
+    font-family: 'Questrial', sans-serif;
+
 }
 
 .jumbotron {
     background-color: rgb(32, 32, 32, 0.9);
     color: white;
-    height: 300px;
+    height: 325px;
 
 }
 
 #inputFields {
  margin: auto;
- width: 650px;   
+ width: 90%;   
 }
 
 #submit {
     float: right;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-right: 3%;
-    background-color: grey;
-    border: none;
+    margin-bottom: 10%;
 }
 
-.btn {
-    background-color: grey;
-    border: none;
-}
+
 
 .modal {
   color: rgb(32, 32, 32);
 
 }
 
+
+a {
+    color: white;
+}
+
+.glyphicon {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration-color: rgba(122, 122, 122, 0.9);
+}
+
+a:hover {
+    color: rgba(122, 122, 122, 0.9);
+
+}
+
+/* h1 {
+    font-family: 'Vast Shadow', cursive;
+} */
+
+.navbar-brand {
+    font-family: 'Vast Shadow', cursive;
+    FONT-SIZE: 16PX;
+}
+
+.navbar-right {
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
+}
+
+#inputFieldTitle {
+    width: 90%;   
+    margin: auto;
+    margin-bottom: 2%;
+
+}
+
+#lead {
+    margin: auto;
+    width: 90%;   
+}

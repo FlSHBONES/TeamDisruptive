@@ -5,55 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Drink n Think</title>
+    <title>NO FEAR BEER!</title>
     <!-- Link to Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <!-- Link to Style Sheet -->
-    <link rel="stylesheet" href="assets/style/splashpage.css">
-    <!-- Link to Firebase-->
-    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script> -->
-    <!-- Link to JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <!-- Link to JS-->
-    <script src="assets/JS/logic.js"></script>
+    crossorigin="anonymous">
+<!-- Link to Style Sheet -->
+<link rel="stylesheet" href="assets/style/splashpage.css">
+<!-- Link to Firebase-->
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script> -->
+<!-- Link to JQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<!-- Link to JS-->
+<script src="assets/JS/logic.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Vast+Shadow|Sacramento');
+    </style>
+
+
 
 </head>
 
 <body>
-    <nav class="navbar navbar-dark">
-        <!-- Navbar content -->
-    </nav>
+
+    <!-- <nav class="navbar navbar-default" role="navigation">
+                <ul class="nav navbar-nav navbrand">
+                    <a class="navbar-brand" href="#">No Fear Beer</a>
+                </ul>
+        
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="#">Please sign in or create an account!</a>
+                </ul>
+            </nav> -->
 
     <div class="container" id="content">
         <div class="jumbotron">
+            <h1 class="title">NO FEAR</h1>
+            <h1 class="bigTitle">BEER</h1> 
+            <h1 class="subTitle">Philly's Finest Beer and Crime Application</h1>
+   
+            <!-- <h1 class="subTitle">Philly's Finest Beer and Crime Application</h1> -->
+            <hr>
+            <div id="signIn">
+                <div class="row" id="signUpBtn">
+                    <button type="button" id="signUpBtn" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                        New? Click here to sign up!
+                    </button>
+                </div>
+                
+                <div class="row" id="lead">
+                     <p class="lead">Please sign in to begin 🍻</p> 
+                </div>
+
+                <div class="row" id="inputFields">
+                        <label for="inputUserName" id="label">Username</label>
+                        <input type="text" class="form-control" id="inputUserName" placeholder="thisisyourusername">
+                    </div>
+
+                <div class="row" id="inputFields">
+                    <label for="inputPassword" id="label">Password</label>
+                    <input type="password" class="form-control" id="inputEmail1" placeholder="*************">
+                </div>
+
+                <div class="row" id="submit">
+                    <button type="button" class="btn btn-secondary" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="signIn">
             <h1 class="display-4">Who are you?</h1>
-
-            <button type="button" id="signUpBtn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                New? Click here to sign up!
-            </button>
-            <hr class="my-4">
-
-            <div class="row" id="inputFields">
+            
+            <button type="button" id="signUpBtn" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                    New? Click here to sign up!
+                </button>
+                <hr class="my-4">
+                
+                <div class="row" id="inputFields">
                 <p class="lead">Please sign in to begin</p>
             </div>
             <div class="row" id="inputFields">
-                <label for="inputEmail">Email address</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="brookeisthebest@gmail.com">
+                <label for="inputEmail1">Email address</label>
+                <input type="email" class="form-control" id="inputEmail1" placeholder="brookeisthebest@gmail.com">
                 <label for="inputPassword">Password</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="*************">
+                <input type="password" class="form-control" id="inputEmail1" placeholder="*************">
             </div>
-
+            
             <div class="row btn" id="submit">
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <button type="button" class="btn btn-secondary" id="submit">Submit</button>
             </div>
+             -->
 
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -63,37 +112,33 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <!-- <div class="row" id="modalInput"> -->
-                            <label for="inputFirstName">First Name</label>
-                            <input type="name" class="form-control" id="inputFirstNameReg" placeholder="Brooke">
-                            <label for="inputLastName">Last Name</label>
-                            <input type="name" class="form-control" id="inputLastNameReg" placeholder="Mitchell">
-                            <label for="inputUserName">Username</label>
-                            <input type="name" class="form-control" id="inputUserNameReg" placeholder="brookeusername">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmailReg" placeholder="brookeisthebest@gmail.com">
-                            <label for="inputPassword">Password</label>
-                            <input type="text" class="form-control" id="inputPasswordReg" placeholder="*************">
-                            <label for="inputConfirmPassword">Confirm Password</label>
-                            <input type="text" class="form-control" id="inputConfirmPasswordReg" placeholder="*************">
-                            <div class="form-check">
-                                <input class="form-check-input position-static" type="checkbox" id="ageCheck" value="agecheck">                                Check
-                                if you are at least 21 years old
-                                <!-- </div> -->
+                                    <label for="inputFirstName">First Name</label>
+                                    <input type="name" class="form-control" id="inputFirstNameReg" placeholder="Brooke">
+                                    <label for="inputLastName">Last Name</label>
+                                    <input type="name" class="form-control" id="inputLastNameReg" placeholder="Mitchell">
+                                    <label for="inputUserName">Username</label>
+                                    <input type="name" class="form-control" id="inputUserNameReg" placeholder="brookeusername">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="text" class="form-control" id="inputPasswordReg" placeholder="*************">
+                                    <label for="inputConfirmPassword">Confirm Password</label>
+                                    <input type="text" class="form-control" id="inputConfirmPasswordReg" placeholder="*************">
+                                    <div class="form-check">
+                                            <input class="form-check-input position-static" type="checkbox" id="ageCheck" value="agecheck"> Check if you are at least 21 years old
+                                </div>
+                               
+                              
                             </div>
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary" id="submitReg">Submit</button>
-
-
-                        </div>
-                    </div>
-                </div>
+                            <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary" id="submitReg">Submit</button>
+                                    
+                                    
+                                    <!-- <div id="firebaseui-auth-container"></div> -->
+                                </div>
+                            </div>
             </div>
         </div>
     </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
