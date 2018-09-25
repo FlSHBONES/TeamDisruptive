@@ -19,7 +19,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <!-- Link to JS-->
-    <script src="assets/JS/logic.js"></script>
+    <script src="assets/javascript/logic.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Vast+Shadow|Sacramento');
@@ -32,149 +32,151 @@
 
 
 <body>
-        <!-- NAV BAR -->
-        <nav class="navbar navbar-default" role="navigation">
-                <ul class="nav navbar-nav navbrand">
-                    <!-- TITLE -->
-                    <a class="navbar-brand" href="#">NO FEAR BEER</a>
-                </ul>
-        
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- USER -->
-                    <a href="#">Hello, Brooke!</a>
-                </ul>
-            </nav>
-            <!-- BEGIN LOCATION PAGE -->
-            <div class="container-fluid">
-        
-            <!-- <div class="locationPage"> -->
-                <!-- END NAV BAR -->
-    <!-- SPLASH PAGE -->
-
-    <div class="splashPage">
-    <div class="container" id="content">
-        <!-- BEGIN CONTENT FOR SPLASH PAGE -->
-        <div class="jumbotron" id="splashJumbo">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-default" role="navigation">
+        <ul class="nav navbar-nav navbrand">
             <!-- TITLE -->
-            <h1 class="title">NO FEAR</h1>
-            <h1 class="bigTitle">BEER</h1>
-            <h1 class="subTitle">Philly's Finest Beer and Crime Application</h1>
+            <a class="navbar-brand" href="#">NO FEAR BEER</a>
+        </ul>
 
-            <!-- BREAK -->
-            <hr>
+        <ul class="nav navbar-nav navbar-right">
+            <!-- USER -->
+            <a href="#">Hello, Brooke!</a>
+        </ul>
+    </nav>
+    <!-- BEGIN LOCATION PAGE -->
+    <div class="container-fluid">
 
-            <!-- SIGN IN SECTION  -->
-            <div id="signIn">
+        <!-- <div class="locationPage"> -->
+        <!-- END NAV BAR -->
+        <!-- SPLASH PAGE -->
 
-                <!-- SIGN UP BUTTON  -->
-                <div class="row" id="signUpBtn">
-                    <button type="button" id="signUpBtn" class="btn btn-secondary" data-toggle="modal" data-target="#signInModal">
-                        New? Click here to sign up!
-                    </button>
-                </div>
+        <div class="splashPage">
+            <div class="container" id="content">
+                <!-- BEGIN CONTENT FOR SPLASH PAGE -->
+                <div class="jumbotron" id="splashJumbo">
+                    <!-- TITLE -->
+                    <h1 class="title">NO FEAR</h1>
+                    <h1 class="bigTitle">BEER</h1>
+                    <h1 class="subTitle">Philly's Finest Beer and Crime Application</h1>
 
-                <!-- SIGN IN BELOW -->
-                <div class="row" id="lead">
-                    <p class="lead">Please sign in to begin 🍻</p>
-                </div>
+                    <!-- BREAK -->
+                    <hr>
 
-                <!-- SIGN IN INPUT FIELDS FOR USERNAME AND PASSWORD -->
-                <div class="row" id="inputFields">
-                    <label for="inputUserName" id="label">Username</label>
-                    <input type="text" class="form-control" id="inputUserName" placeholder="thisisyourusername">
-                </div>
+                    <!-- SIGN IN SECTION  -->
+                    <div id="signIn">
 
-                <div class="row" id="inputFields">
-                    <label for="inputPassword" id="label">Password</label>
-                    <input type="password" class="form-control" id="inputEmail1" placeholder="*************">
-                </div>
+                        <!-- SIGN UP BUTTON  -->
+                        <div class="row" id="signUpBtn">
+                            <button type="button" id="signUpBtn" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#signInModal">
+                                New? Click here to sign up!
+                            </button>
+                        </div>
 
-                <!-- SUBMIT BUTTON -->
-                <div class="row" id="submit">
-                    <button type="button" class="btn btn-secondary" id="submit">Submit</button>
-                </div>
-            </div>
-        </div>
-        <!-- END CONTENT FOR SPLASH PAGE -->
-    </div>
-    <!-- END SPLASH PAGE CONTENT -->
+                        <!-- SIGN IN BELOW -->
+                        <div class="row" id="lead">
+                            <p class="lead">Please sign in to begin 🍻</p>
+                        </div>
 
+                        <!-- SIGN IN INPUT FIELDS FOR USERNAME AND PASSWORD -->
+                        <div class="row" id="inputFields">
+                            <label for="inputUserName" id="label">Username</label>
+                            <input type="text" class="form-control" id="inputUserName" placeholder="thisisyourusername">
+                        </div>
 
-    <!-- START SIGN IN MODAL -->
+                        <div class="row" id="inputFields">
+                            <label for="inputPassword" id="label">Password</label>
+                            <input type="password" class="form-control" id="inputEmail1" placeholder="*************">
+                        </div>
 
-    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <!-- MODAL CONTENT HOLDER -->
-            <div class="modal-content">
-                <!-- MODAL HEADER -->
-                <div class="modal-header">
-                    <!-- MODAL TITLE -->
-                    <h5 class="modal-title" id="modalLabel">Create an Account</h5>
-                    <!-- CLOSE BUTTON -->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- MODAL BODY -->
-                <div class="modal-body">
-                    <!-- INPUT FIELDS -->
-                    <label for="inputFirstName">First Name</label>
-                    <input type="name" class="form-control" id="inputFirstNameReg" placeholder="Brooke">
-                    <label for="inputLastName">Last Name</label>
-                    <input type="name" class="form-control" id="inputLastNameReg" placeholder="Mitchell">
-                    <label for="inputUserName">Username</label>
-                    <input type="name" class="form-control" id="inputUserNameReg" placeholder="brookeusername">
-                    <label for="inputPassword">Password</label>
-                    <input type="text" class="form-control" id="inputPasswordReg" placeholder="*************">
-                    <label for="inputConfirmPassword">Confirm Password</label>
-                    <input type="text" class="form-control" id="inputConfirmPasswordReg" placeholder="*************">
-                    <div class="form-check">
-                        <input class="form-check-input position-static" type="checkbox" id="ageCheck" value="agecheck"> Check if you are at least 21 years old
+                        <!-- SUBMIT BUTTON -->
+                        <div class="row" id="submit">
+                            <button type="button" class="btn btn-secondary" id="submit">Submit</button>
+                        </div>
                     </div>
                 </div>
+                <!-- END CONTENT FOR SPLASH PAGE -->
+            </div>
+            <!-- END SPLASH PAGE CONTENT -->
 
-                <!-- MODAL FOOTER -->
-                <div class="modal-footer">
+
+            <!-- START SIGN IN MODAL -->
+
+            <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <!-- MODAL CONTENT HOLDER -->
+                    <div class="modal-content">
+                        <!-- MODAL HEADER -->
+                        <div class="modal-header">
+                            <!-- MODAL TITLE -->
+                            <h5 class="modal-title" id="modalLabel">Create an Account</h5>
+                            <!-- CLOSE BUTTON -->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!-- MODAL BODY -->
+                        <div class="modal-body">
+                            <!-- INPUT FIELDS -->
+                            <label for="inputFirstName">First Name</label>
+                            <input type="name" class="form-control" id="inputFirstNameReg" placeholder="Brooke">
+                            <label for="inputLastName">Last Name</label>
+                            <input type="name" class="form-control" id="inputLastNameReg" placeholder="Mitchell">
+                            <label for="inputUserName">Username</label>
+                            <input type="name" class="form-control" id="inputUserNameReg" placeholder="brookeusername">
+                            <label for="inputPassword">Password</label>
+                            <input type="text" class="form-control" id="inputPasswordReg" placeholder="*************">
+                            <label for="inputConfirmPassword">Confirm Password</label>
+                            <input type="text" class="form-control" id="inputConfirmPasswordReg" placeholder="*************">
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="ageCheck" value="agecheck">
+                                Check if you are at least 21 years old
+                            </div>
+                        </div>
+
+                        <!-- MODAL FOOTER -->
+                        <div class="modal-footer">
+                            <!-- SUBMIT BUTTON -->
+                            <button type="submit" class="btn btn-primary" id="submitReg">Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="locationPage">
+
+            <!-- BEGIN LOCATION PAGE CONTENT -->
+
+            <div class="container" id="content">
+                <div class="jumbotron" id="locationJumbo">
+                    <!-- TITLE -->
+                    <h1 class="display-4" id="inputFieldTitle">Where are you headed?</h1>
+
+                    <div class="row" id="lead">
+                        <!-- SUBTITLE -->
+                        <p class="lead">Enter Location</p>
+                    </div>
+                    <!-- INPUT FIELD -->
+                    <div class="row" id="inputFields">
+                        <input type="location" class="form-control" id="inputLocation" placeholder="📍Fishtown">
+                    </div>
                     <!-- SUBMIT BUTTON -->
-                    <button type="submit" class="btn btn-primary" id="submitReg">Submit</button>
+                    <div class="row btn" id="submit">
+                        <button type="button" class="btn btn-secondary" id="loc-submit">Where's the beer?</button>
+                    </div>
 
+                    <!-- END LOCATION PAGE CONTENT -->
                 </div>
+                <!-- END LOCATION PAGE CONTAINER -->
             </div>
+            <!-- END LOCATION PAGE -->
         </div>
-    </div>
-</div>
-
-
-
-<div class="locationPage">
-    
-    <!-- BEGIN LOCATION PAGE CONTENT -->
-   
-        <div class="container" id="content">
-            <div class="jumbotron" id="locationJumbo">
-                <!-- TITLE -->
-                <h1 class="display-4" id="inputFieldTitle">Where are you headed?</h1>
-
-                <div class="row" id="lead">
-                    <!-- SUBTITLE -->
-                    <p class="lead">Enter Location</p>
-                </div>
-                <!-- INPUT FIELD -->
-                <div class="row" id="inputFields">
-                    <input type="location" class="form-control" id="inputLocation" placeholder="📍Fishtown">
-                </div>
-                <!-- SUBMIT BUTTON -->
-                <div class="row btn" id="submit">
-<!--Tim Changed the SUBMIT ID to Submit2 - This triggers the crime search -->
-                    <button type="button" class="btn btn-secondary" id="submit2">Where's the beer?</button>
-                </div>
-
-                <!-- END LOCATION PAGE CONTENT -->
-            </div>
-            <!-- END LOCATION PAGE CONTAINER -->
-        </div>
-        <!-- END LOCATION PAGE -->
-    </div>
     </div>
 
 
@@ -184,14 +186,14 @@
         <!-- DISPLAY CONTENT CONTAINER -->
         <div class="container">
             <!-- FIRST ROW OF INFO -->
-            <div class="row" id="one">
+            <div class="row justify-content-center mb-5" id="one">
                 <!-- BEGIN MAP -->
-                <div class="col-12">
+                <div class="col-10">
                     <!-- Title -->
                     <h3 id="mapHeaderTitle">This is the map!</h3>
                     <!-- Placeholder image of map -->
-                    <div class="mapHere">
-                        <h1>MAP WILL BE HERE</h1>
+                    <div class="row" id="mapHere">
+                    
                     </div>
 
                 </div>
@@ -201,42 +203,45 @@
             <div class="row" id="crimeTableHolder">
 
                 <div class="col-md-3 barInfo">
-                    <!-- INFO OF SELECTED LOCATION -->
-                    <h4>Selected Location </h4>
-                    <h6>Name of bar</h6>
-                    <p> This is the information!
-                        <br> Google rating: 5/5
-                        <br> Address: 1234 Street</p>
+                    <!-- <div class="barInfo"> -->
+                    <h4> Selected Location </h4>
+                    <h6 class="m-0" id="bar-name">Name of bar</h6>
+                    <p class="m-0" id="bar-rating">Google rating: </p>
+                    <p class="m-0" id="bar-addr">Address: 1234 Street</p>
+
+                    <!-- <a href="#" target="_blank" class="btn btn-primary" id="directions-btn">Get Directions</a> -->
+                    <button type="button" class="btn btn-primary" id="directions-btn">Click Me!</button>
+                    <!-- </div> -->
                 </div>
                 <!-- BEGIN TABLE -->
                 <div class="col-md-8 offset-md-1 table-responsive-sm" id="crimeTable">
                     <!-- Title -->
-                    <h4 id="crimeDataTitle">Reported Crimes Within 1/4 Mile</h4>
+                    <h4 id="crimeDataTitle">Crime Data</h4>
                     <table class="table">
                         <!-- Begin table head -->
                         <thead>
                             <tr>
-                                <th scope="col" class="column">Type of Crime</th>
-                                <th scope="col" class="column">Location</th>
-                                <th scope="col" class="column">Date</th>
-                                <th scope="col" class="column">Time</th>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">HEADER</th>
 
                             </tr>
                         </thead>
                         <!-- Begin table body -->
-                        <tbody id= "crimediv">
+                        <tbody>
                             <tr>
-                                <td id="crimetype"> Tell me the Crime! </td>
-                                <td id="crimelocation"> Block Name and Number  </td>
-                                <td id="crimedate"> When day did it happen?  </td>
-                                <td id="crimetime"> When time of day? </td>
+                                <td id="theTrainName"> INFO </td>
+                                <td id="theDestination"> INFO </td>
+                                <td id="theFrequency"> INFO </td>
+                                <td id="theNextArrival"> INFO </td>
 
                         </tbody>
                         <!-- End table -->
                     </table>
                 </div>
             </div>
-<!-- TODO, either make this work by queing the most recent search into local storag (use new employee in class activity for this code.  If not, axe it!) -->
+
             <div class="row" id="historyTableContainer">
                 <div class="col-12">
                     <div class="table-responsive-sm" id="historyTable">
@@ -244,23 +249,23 @@
                         <h3 id="locationsViewedTitle">Locations Viewed</h3>
                         <!-- Placeholder table of crime data -->
                         <!-- Begin table // this can be a block of text also -->
-                        <table class="table" id="location-history">
+                        <table class="table" id="crime-data">
                             <!-- Begin table head -->
                             <thead>
                                 <tr>
-                                    <th scope="col" class="column">Name</th>
+                                    <th scope="col" class="column">Date</th>
+                                    <th scope="col" class="column">Time</th>
                                     <th scope="col" class="column">Location</th>
-                                    <th scope="col" class="column">Info</th>
-                                    <th scope="col" class="column">Info</th>
+                                    <th scope="col" class="column">Type of crime</th>
                                 </tr>
                             </thead>
                             <!-- Begin table body -->
                             <tbody>
                                 <tr>
-                                    <td id="placename"> Name </td>
-                                    <td id="placelocation"> Location </td>
-                                    <td id="XXXX"> INFO </td>
-                                    <td id="XXXX"> INFO </td>
+                                    <td id="dateOfCrime"> INFO </td>
+                                    <td id="timeOfCrime"> INFO </td>
+                                    <td id="locationOfCrime"> INFO </td>
+                                    <td id="typeOfCrime"> INFO </td>
                             </tbody>
                             <!-- End table -->
                         </table>
@@ -268,8 +273,8 @@
                 </div>
             </div>
         </div>
-</div>
-</div>
+    </div>
+    </div>
     <!-- END DISPLAY PAGE -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -280,175 +285,7 @@
         crossorigin="anonymous"></script>
     <script src="assets/javascript/script.js"></script>
 
-<script>
-function showmethecrime() {
 
-// TDO Latitude and longitude data will be equal to lat and lng output by Dalands API query.  This needs to A. go into his script and B. pull the lat and lng of the clicked restaurant. As shown below, if event handler cant be written to get bar Lat and Lng, we do a mile of the searched location.
-var lat = 39.9716592;
-var lng = -75.1280477;
-// Querying the phl api for incident data.
-queryURL3 = "https://phl.carto.com/api/v2/sql?q=SELECT * FROM incidents_part1_part2 WHERE ST_DWithin(the_geom::geography,ST_GeographyFromText('POINT(" + lng + " " + lat + ")'), 402)";
-
-$.ajax({
-  url: queryURL3,
-  method: "GET"
-}).then(function (response) {
-
-  // Printing the entire object to console
-  console.log(response);
-  console.log(response.rows);
-  console.log(response.rows.length);
-
-  var end = response.rows.length - 1;
-  for (let i = end; i >= end - 10; i--) {
-    console.log(response.rows[i]);
-    //Crime 1 (most recent)
-    var crime1type = response.rows[i].text_general_code;
-    var crime1location = response.rows[i].location_block;
-    var crime1date = response.rows[i].dispatch_date;
-    var crime1time = response.rows[i].dispatch_time;
-    //Crime 2-----------------------------------------------------
-    var crime2type = response.rows[i - 1].text_general_code;
-    var crime2location = response.rows[i - 1].location_block;
-    var crime2date = response.rows[i - 1].dispatch_date;
-    var crime2time = response.rows[i - 1].dispatch_time;
-    //Crime 3-----------------------------------------------------
-    var crime3type = response.rows[i - 2].text_general_code;
-    var crime3location = response.rows[i - 2].location_block;
-    var crime3date = response.rows[i - 2].dispatch_date;
-    var crime3time = response.rows[i - 2].dispatch_time;
-    //Crime 4-----------------------------------------------------
-    var crime4type = response.rows[i - 3].text_general_code;
-    var crime4location = response.rows[i - 3].location_block;
-    var crime4date = response.rows[i - 3].dispatch_date;
-    var crime4time = response.rows[i - 3].dispatch_time;
-    //Crime 5-----------------------------------------------------
-    var crime5type = response.rows[i - 4].text_general_code;
-    var crime5location = response.rows[i - 4].location_block;
-    var crime5date = response.rows[i - 4].dispatch_date;
-    var crime5time = response.rows[i - 4].dispatch_time;
-    //Crime 6-----------------------------------------------------
-    var crime6type = response.rows[i - 5].text_general_code;
-    var crime6location = response.rows[i - 5].location_block;
-    var crime6date = response.rows[i - 5].dispatch_date;
-    var crime6time = response.rows[i - 5].dispatch_time;
-    //Crime 7-----------------------------------------------------
-    var crime7type = response.rows[i - 6].text_general_code;
-    var crime7location = response.rows[i - 6].location_block;
-    var crime7date = response.rows[i - 6].dispatch_date;
-    var crime7time = response.rows[i - 6].dispatch_time;
-    //Crime 8-----------------------------------------------------
-    var crime8type = response.rows[i - 7].text_general_code;
-    var crime8location = response.rows[i - 7].location_block;
-    var crime8date = response.rows[i - 7].dispatch_date;
-    var crime8time = response.rows[i - 7].dispatch_time;
-
-
-  }
-  console.log(crime1type);
-  console.log(crime1location);
-  console.log(crime1date);
-  console.log(crime1time);
-  console.log("--------");
-    console.log(crime2type);
-  console.log(crime2location);
-  console.log(crime2date);
-  console.log(crime2time);
-  console.log("--------");
-    console.log(crime3type);
-  console.log(crime3location);
-  console.log(crime3date);
-  console.log(crime3time);
-  console.log("--------");
-    console.log(crime4type);
-  console.log(crime4location);
-  console.log(crime4date);
-  console.log(crime4time);
-  console.log("--------");
-    console.log(crime5type);
-  console.log(crime5location);
-  console.log(crime5date);
-  console.log(crime5time);
-  console.log("--------");
-    console.log(crime6type);
-  console.log(crime6location);
-  console.log(crime6date);
-  console.log(crime6time);
-  console.log("--------");
-    console.log(crime7type);
-  console.log(crime7location);
-  console.log(crime7date);
-  console.log(crime7time);
-  console.log("--------");
-    console.log(crime8type);
-  console.log(crime8location);
-  console.log(crime8date);
-  console.log(crime8time);
-
-
-
-
-  // Empty the contents of the crime div on new lcoations search to replace with new crime data.
-  $("#crimediv").empty();
-  var newRow1 = $("<tr>").append(
-    $("<td>").text(crime1type),
-    $("<td>").text(crime1date),
-    $("<td>").text(crime1time),
-    $("<td>").text(crime1location),
-
-  );
-
-  var newRow2 = $("<tr>").append(
-    $("<td>").text(crime2type),
-    $("<td>").text(crime2date),
-    $("<td>").text(crime2time),
-    $("<td>").text(crime2location),
-  );
-
-  var newRow3 = $("<tr>").append(
-    $("<td>").text(crime3type),
-    $("<td>").text(crime3date),
-    $("<td>").text(crime3time),
-    $("<td>").text(crime3location),
-  );
-
-  var newRow4 = $("<tr>").append(
-    $("<td>").text(crime4type),
-    $("<td>").text(crime4date),
-    $("<td>").text(crime4time),
-    $("<td>").text(crime4location),
-  );
-
-  var newRow5 = $("<tr>").append(
-    $("<td>").text(crime4type),
-    $("<td>").text(crime4date),
-    $("<td>").text(crime4time),
-    $("<td>").text(crime4location),
-  );
-
-  $("#crimediv").append(newRow1);
-  $("#crimediv").append(newRow2);
-  $("#crimediv").append(newRow3);
-  $("#crimediv").append(newRow4);
-  $("#crimediv").append(newRow5);
-
-
-});
-}
-
-
-//TODO Chagne the Event Handler to not be clicking the submit button, but to update whenver a new bar is clicked.  If this is too difficult, then this can just be the radius of the search location (Fishtown, etc).  I'm thining half mile or mile radius.
-// Event handler
-$("#submit2").on("click", function (event) {
-// Preventing the button from trying to submit the form
-event.preventDefault();
-
-
-// Running the crime function
-showmethecrime();
-});
-
-</script>
 
 </body>
 

@@ -242,3 +242,12 @@ padding: 100px;
 #crimeDataTitle {
     color: white;
 }
+.list-item-div{
+    border: 1px solid black;
+    background-color: orange;
+}
+.list-item-div:hover{
+    border: 1px solid black;
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
