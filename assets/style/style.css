@@ -53,9 +53,18 @@ margin-bottom: 0%;
 }
 
 
+#submit2 {
+    float: right;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+
 
 .modal {
-  color: rgb(32, 32, 32);
+  color: rgb(76, 62, 62);
 
 }
 

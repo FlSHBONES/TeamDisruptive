@@ -32,6 +32,7 @@
 
 
 <body>
+   
     <!-- NAV BAR -->
     <nav class="navbar navbar-default" role="navigation">
         <ul class="nav navbar-nav navbrand">
@@ -139,8 +140,8 @@
                         <!-- MODAL FOOTER -->
                         <div class="modal-footer">
                             <!-- SUBMIT BUTTON -->
-                            <button type="submit" class="btn btn-primary" id="submitReg">Submit</button>
-
+                            <button type="submit" class="btn btn-primary" id="submitReg" data-dismiss="modal"
+                            >Submit</button>
                         </div>
                     </div>
                 </div>
@@ -216,25 +217,25 @@
                 <!-- BEGIN TABLE -->
                 <div class="col-md-8 offset-md-1 table-responsive-sm" id="crimeTable">
                     <!-- Title -->
-                    <h4 id="crimeDataTitle">Crime Data</h4>
+                    <h4 id="crimeDataTitle">Reported Crimes Within 1/4 Mile</h4>
                     <table class="table">
                         <!-- Begin table head -->
                         <thead>
                             <tr>
-                                <th scope="col" class="column">HEADER</th>
-                                <th scope="col" class="column">HEADER</th>
-                                <th scope="col" class="column">HEADER</th>
-                                <th scope="col" class="column">HEADER</th>
+                                <th scope="col" class="column">Type of Crime</th>
+                                <th scope="col" class="column">Location</th>
+                                <th scope="col" class="column">Date</th>
+                                <th scope="col" class="column">Time</th>
 
                             </tr>
                         </thead>
                         <!-- Begin table body -->
-                        <tbody>
+                        <tbody id= "crimediv">
                             <tr>
-                                <td id="theTrainName"> INFO </td>
-                                <td id="theDestination"> INFO </td>
-                                <td id="theFrequency"> INFO </td>
-                                <td id="theNextArrival"> INFO </td>
+                                <td id="crimetype"> Tell me the Crime! </td>
+                                <td id="crimelocation"> Block Name and Number  </td>
+                                <td id="crimedate"> When day did it happen?  </td>
+                                <td id="crimetime"> When time of day? </td>
 
                         </tbody>
                         <!-- End table -->
