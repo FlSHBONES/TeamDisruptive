@@ -61,12 +61,16 @@ var config = {
         if (!userName || !password) {
           return console.log('username and password required')
         }
-    
+       
+          
+         
         console.log(password);
         console.log(verifyPassword);
     
         if (password != verifyPassword) {
           return console.log('passwords do not match')
+          
+                   
         }
     
         if ((document.getElementById("ageCheck").checked) == true) {
@@ -91,7 +95,7 @@ var config = {
 
         console.log("new user added");
         userAdded = true;
-
+        
       } else if (userAdded === true) {
         console.log("Not today mofucka")
       }

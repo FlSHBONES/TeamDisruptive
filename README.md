@@ -27,7 +27,7 @@
 
             The top two ones can be managed by two people as someone would need to drie the site whil the other speaks.  they can take turns going back and forth.  I imagine 5 minutes for these.
 
-            - Technology walkthrough - someone talks about the APIs we used, bootstrap approach, authentication, and project team management. This one probably requires the most background research to speak to the core technologies that power the site and how and why they work. Approx 3 Minutes
+            - Technology walkthrough - someone talks about the APIs we used, bootstrapj, authentication, and project team management. This one probably requires the most background research to speak to the core technologies that power the site and how and why they work. Approx 3 Minutes
 
             - Finally, behind the scenes - last unspoken team member goes through the process of developing the app together, the lost names (RIP DB squared), the APIs we applied for and didnt / couldnt use (go f yourself Untappd, BeerMapper, Crimespot), cut features due to inexperience or time constraints, and different ways we changed direction. Approx 3 minutes.
 
