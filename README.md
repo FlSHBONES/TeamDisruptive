@@ -34,7 +34,7 @@
             - Finally, a thank you for watching and reading and a polite reminder - "please dont get stabbed when getting beer. educate yourself.  NFB!"
 
 
-Whew.  I typed alot of shit. Hope the read was good! (by the way its 10:42 as of completion of this post).
+Whew.  I typed alot. Hope the read was good! (by the way its 10:42 as of completion of this post).
 
 
 
