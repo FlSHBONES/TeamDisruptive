@@ -42,7 +42,14 @@ var config = {
           snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
             console.log(childData);
-            // if ((childData == userName) && ()
+            
+            if (childData.userName === userName) {
+              console.log("Username Located");
+              if (childData.password === password) {
+                console.log("Login Successful");
+              }
+            }
+
           });
         })
     });
@@ -99,8 +106,4 @@ var config = {
     });
   });
   
-        // app.signOut = function() {
-        //   //Sign out
-        //   firebase.auth().signOut();
-        // };
-      // });
+// ADD SIGNOUT FUNCTION
