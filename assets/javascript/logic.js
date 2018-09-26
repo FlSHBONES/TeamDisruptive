@@ -19,7 +19,8 @@ var config = {
   var database = firebase.database();
   var childData;
   var userAdded = false;
-  
+  var dupeUser = false;
+
   console.log("pass variables");
   
   $(document).ready(function() {
@@ -31,7 +32,7 @@ var config = {
         password = $("#inputPassword").val().trim();
   
         if (!userName || !password) {
-          return console.log('userName and password required')
+          console.log('userName and password required');
         }
   
         console.log(userName);
@@ -47,7 +48,11 @@ var config = {
               console.log("Username Located");
               if (childData.password === password) {
                 console.log("Login Successful");
+              } else if (childData.password != password) {
+                console.log("Password is Incorrect");
               }
+            } else {
+              console.log("No User Match");
             }
 
           });
@@ -66,21 +71,40 @@ var config = {
         // verifyPassword = $("inputConfirmPasswordReg").val().trim();
     
         if (!userName || !password) {
-          return console.log('username and password required')
+            console.log('username and password required')
         }
     
         console.log(password);
         console.log(verifyPassword);
     
         if (password != verifyPassword) {
-          return console.log('passwords do not match')
+          console.log('passwords do not match')
         }
     
         if ((document.getElementById("ageCheck").checked) == true) {
           console.log('21+ age verify');
         } else {
-          return console.log('Please Verify Age')
+          console.log('Please Verify Age')
         }
+
+        var userRef2 = database.ref('userBase');
+        userRef2.on('value', function(snapshot) {
+          snapshot.forEach(function(childSnapshot) {
+            var childData2 = childSnapshot.val();
+            console.log(childData2);
+            
+            if (childData2.userName === userName) {
+              dupeUser = true;
+              console.log("Duplicate Username Detected");
+            };
+          });
+        });
+
+        // TO DO:
+        //  1) Make dupeUser function properly
+        //    - Make sure new users can be added while dupe users cannot
+        //
+        //
     
         console.log(userName);
         console.log(password);
@@ -89,12 +113,16 @@ var config = {
         console.log(userName);
         console.log(verifyPassword);
     
-        database.ref("/userBase").push ({
-          password: password,
-          firstName: firstName,
-          lastName: lastName,
-          userName: userName
-        });
+        if (dupeUser = false) {
+          database.ref("/userBase").push ({
+            password: password,
+            firstName: firstName,
+            lastName: lastName,
+            userName: userName
+          });
+        } else if (dupeUser = true) {
+          console.log("User Add Prevented");
+        }
 
         console.log("new user added");
         userAdded = true;
