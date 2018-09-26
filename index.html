@@ -32,7 +32,7 @@
 
 
 <body>
-   
+    
     <!-- NAV BAR -->
     <nav class="navbar navbar-default" role="navigation">
         <ul class="nav navbar-nav navbrand">
@@ -42,7 +42,14 @@
 
         <ul class="nav navbar-nav navbar-right">
             <!-- USER -->
-            <a href="#">Hello, Brooke!</a>
+            <!-- <div class="btn-group"> -->
+                    <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Hello, Username!
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" id="signOut" href="#">Sign Out</a>
+                    </div>
+                  <!-- </div> -->
         </ul>
     </nav>
     <!-- BEGIN LOCATION PAGE -->
@@ -201,18 +208,18 @@
             </div>
 
             <!-- SECOND ROW OF DATA -->
-            <div class="row" id="crimeTableHolder">
+            <div class="row">
 
-                <div class="col-md-3 barInfo">
-                    <!-- <div class="barInfo"> -->
+                <div class="col-md-4 barInfo">
+                    <div id="text">
                     <h4> Selected Location </h4>
                     <h6 class="m-0" id="bar-name">Name of bar</h6>
                     <p class="m-0" id="bar-rating">Google rating: </p>
                     <p class="m-0" id="bar-addr">Address: 1234 Street</p>
 
                     <!-- <a href="#" target="_blank" class="btn btn-primary" id="directions-btn">Get Directions</a> -->
-                    <button type="button" class="btn btn-primary" id="directions-btn">Click Me!</button>
-                    <!-- </div> -->
+                    <button type="button" class="btn btn-secondary" id="directions-btn">Directions</button>
+                </div>
                 </div>
                 <!-- BEGIN TABLE -->
                 <div class="col-md-8 offset-md-1 table-responsive-sm" id="crimeTable">
