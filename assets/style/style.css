@@ -274,3 +274,12 @@ padding-left: 25px;
 #directions-btn {
     margin-top: 5%;
 }
+
+.dropdown-toggle {
+background-color: transparent;
+border: none;
+}
+
+.fa {
+    font-size: 25px;
+}
