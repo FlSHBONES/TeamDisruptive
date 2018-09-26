@@ -50,6 +50,7 @@ a {
 
 .glyphicon {
     color: white;
+<<<<<<< HEAD
 }
 
 a {
@@ -86,4 +87,6 @@ a:hover {
 #lead {
     margin: auto;
     width: 90%;   
+=======
+>>>>>>> develop
 }

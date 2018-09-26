@@ -8,18 +8,18 @@
     <title>NO FEAR BEER!</title>
     <!-- Link to Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-<!-- Link to Style Sheet -->
-<link rel="stylesheet" href="assets/style/splashpage.css">
-<!-- Link to Firebase-->
-<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script> -->
-<!-- Link to JQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<!-- Link to JS-->
-<script src="assets/JS/logic.js"></script>
+        crossorigin="anonymous">
+    <!-- Link to Style Sheet -->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- Link to Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script> -->
+    <!-- Link to JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Link to JS-->
+    <script src="assets/javascript/logic.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Vast+Shadow|Sacramento');
@@ -29,124 +29,246 @@
 
 </head>
 
+
+
 <body>
+    
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-default" role="navigation">
+        <ul class="nav navbar-nav navbrand">
+            <!-- TITLE -->
+            <a class="navbar-brand" href="#">NO FEAR BEER</a>
+        </ul>
 
-    <!-- <nav class="navbar navbar-default" role="navigation">
-                <ul class="nav navbar-nav navbrand">
-                    <a class="navbar-brand" href="#">No Fear Beer</a>
-                </ul>
-        
-                <ul class="nav navbar-nav navbar-right">
-                    <a href="#">Please sign in or create an account!</a>
-                </ul>
-            </nav> -->
-
-    <div class="container" id="content">
-        <div class="jumbotron">
-            <h1 class="title">NO FEAR</h1>
-            <h1 class="bigTitle">BEER</h1> 
-            <h1 class="subTitle">Philly's Finest Beer and Crime Application</h1>
-   
-            <!-- <h1 class="subTitle">Philly's Finest Beer and Crime Application</h1> -->
-            <hr>
-            <div id="signIn">
-                <div class="row" id="signUpBtn">
-                    <button type="button" id="signUpBtn" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
-                        New? Click here to sign up!
+        <ul class="nav navbar-nav navbar-right">
+            <!-- USER -->
+            <!-- <div class="btn-group"> -->
+                    <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Hello, Username!
                     </button>
-                </div>
-                
-                <div class="row" id="lead">
-                     <p class="lead">Please sign in to begin 🍻</p> 
-                </div>
-
-                <div class="row" id="inputFields">
-                        <label for="inputUserName" id="label">Username</label>
-                        <input type="text" class="form-control" id="inputUserName" placeholder="thisisyourusername">
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" id="signOut" href="#">Sign Out</a>
                     </div>
+                  <!-- </div> -->
+        </ul>
+    </nav>
+    <!-- BEGIN LOCATION PAGE -->
+    <div class="container-fluid">
 
-                <div class="row" id="inputFields">
-                    <label for="inputPassword" id="label">Password</label>
-                    <input type="password" class="form-control" id="inputEmail1" placeholder="*************">
+        <!-- <div class="locationPage"> -->
+        <!-- END NAV BAR -->
+        <!-- SPLASH PAGE -->
+
+        <div class="splashPage">
+            <div class="container" id="content">
+                <!-- BEGIN CONTENT FOR SPLASH PAGE -->
+                <div class="jumbotron" id="splashJumbo">
+                    <!-- TITLE -->
+                    <h1 class="title">NO FEAR</h1>
+                    <h1 class="bigTitle">BEER</h1>
+                    <h1 class="subTitle">Philly's Finest Beer and Crime Application</h1>
+
+                    <!-- BREAK -->
+                    <hr>
+
+                    <!-- SIGN IN SECTION  -->
+                    <div id="signIn">
+
+                        <!-- SIGN UP BUTTON  -->
+                        <div class="row" id="signUpBtn">
+                            <button type="button" id="signUpBtn" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#signInModal">
+                                New? Click here to Sign Up!
+                            </button>
+                        </div>
+
+                        <!-- SIGN IN BELOW -->
+                        <div class="row" id="lead">
+                            <p class="lead">Please sign in to begin 🍻</p>
+                        </div>
+
+                        <!-- SIGN IN INPUT FIELDS FOR USERNAME AND PASSWORD -->
+                        <div class="row" id="inputFields">
+                            <label for="inputUserName" id="label">Username</label>
+                            <input type="text" class="form-control" id="inputUserName" placeholder="thisisyourusername">
+                        </div>
+
+                        <div class="row" id="inputFields">
+                            <label for="inputPassword" id="label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="*************">
+                        </div>
+
+                        <!-- SUBMIT BUTTON -->
+                        <div class="row" id="submit">
+                            <button type="button" class="btn btn-secondary" id="submit2">Submit</button>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="row" id="submit">
-                    <button type="button" class="btn btn-secondary" id="submit">Submit</button>
-                </div>
+                <!-- END CONTENT FOR SPLASH PAGE -->
             </div>
-        </div>
-    </div>
+            <!-- END SPLASH PAGE CONTENT -->
 
 
-    <!-- <div id="signIn">
-            <h1 class="display-4">Who are you?</h1>
-            
-            <button type="button" id="signUpBtn" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
-                    New? Click here to sign up!
-                </button>
-                <hr class="my-4">
-                
-                <div class="row" id="inputFields">
-                <p class="lead">Please sign in to begin</p>
-            </div>
-            <div class="row" id="inputFields">
-                <label for="inputEmail1">Email address</label>
-                <input type="email" class="form-control" id="inputEmail1" placeholder="brookeisthebest@gmail.com">
-                <label for="inputPassword">Password</label>
-                <input type="password" class="form-control" id="inputEmail1" placeholder="*************">
-            </div>
-            
-            <div class="row btn" id="submit">
-                <button type="button" class="btn btn-secondary" id="submit">Submit</button>
-            </div>
-             -->
+            <!-- START SIGN IN MODAL -->
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog" role="document">
+                    <!-- MODAL CONTENT HOLDER -->
                     <div class="modal-content">
+                        <!-- MODAL HEADER -->
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Create an Account</h5>
+                            <!-- MODAL TITLE -->
+                            <h5 class="modal-title" id="modalLabel">Create an Account</h5>
+                            <!-- CLOSE BUTTON -->
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
+                        <!-- MODAL BODY -->
                         <div class="modal-body">
-                                    <label for="inputFirstName">First Name</label>
-                                    <input type="name" class="form-control" id="inputFirstNameReg" placeholder="Brooke">
-                                    <label for="inputLastName">Last Name</label>
-                                    <input type="name" class="form-control" id="inputLastNameReg" placeholder="Mitchell">
-                                    <label for="inputUserName">Username</label>
-                                    <input type="name" class="form-control" id="inputUserNameReg" placeholder="brookeusername">
-                                    <label for="inputPassword">Password</label>
-                                    <input type="text" class="form-control" id="inputPasswordReg" placeholder="*************">
-                                    <label for="inputConfirmPassword">Confirm Password</label>
-                                    <input type="text" class="form-control" id="inputConfirmPasswordReg" placeholder="*************">
-                                    <div class="form-check">
-                                            <input class="form-check-input position-static" type="checkbox" id="ageCheck" value="agecheck"> Check if you are at least 21 years old
-                                </div>
-                               
-                              
+                            <!-- INPUT FIELDS -->
+                            <label for="inputFirstName">First Name</label>
+                            <input type="name" class="form-control" id="inputFirstNameReg" placeholder="Brooke">
+                            <label for="inputLastName">Last Name</label>
+                            <input type="name" class="form-control" id="inputLastNameReg" placeholder="Mitchell">
+                            <label for="inputUserName">Username</label>
+                            <input type="name" class="form-control" id="inputUserNameReg" placeholder="brookeusername">
+                            <label for="inputPassword">Password</label>
+                            <input type="text" class="form-control" id="inputPasswordReg" placeholder="*************">
+                            <label for="inputConfirmPassword">Confirm Password</label>
+                            <input type="text" class="form-control" id="inputConfirmPasswordReg" placeholder="*************">
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="ageCheck" value="agecheck">
+                                Check if you are at least 21 years old
                             </div>
-                            <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary" id="submitReg">Submit</button>
-                                    
-                                    
-                                    <!-- <div id="firebaseui-auth-container"></div> -->
-                                </div>
-                            </div>
+                        </div>
+
+                        <!-- MODAL FOOTER -->
+                        <div class="modal-footer">
+                            <!-- SUBMIT BUTTON -->
+                            <button type="submit" class="btn btn-primary" id="submitReg" data-dismiss="modal"
+                            >Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="locationPage">
+
+            <!-- BEGIN LOCATION PAGE CONTENT -->
+
+            <div class="container" id="content">
+                <div class="jumbotron" id="locationJumbo">
+                    <!-- TITLE -->
+                    <h1 class="display-4" id="inputFieldTitle">Where are you headed?</h1>
+
+                    <div class="row" id="lead">
+                        <!-- SUBTITLE -->
+                        <p class="lead">Enter Location</p>
+                    </div>
+                    <!-- INPUT FIELD -->
+                    <div class="row" id="inputFields">
+                        <input type="location" class="form-control" id="inputLocation" placeholder="📍Fishtown">
+                    </div>
+                    <!-- SUBMIT BUTTON -->
+                    <div class="row btn" id="submit">
+                        <button type="button" class="btn btn-secondary" id="loc-submit">Where's the beer?</button>
+                    </div>
+
+                    <!-- END LOCATION PAGE CONTENT -->
+                </div>
+                <!-- END LOCATION PAGE CONTAINER -->
+            </div>
+            <!-- END LOCATION PAGE -->
+        </div>
+    </div>
+
+
+    <!-- BEGIN DISPLAY PAGE -->
+    <div id="displayPage">
+
+        <!-- DISPLAY CONTENT CONTAINER -->
+        <div class="container">
+            <!-- FIRST ROW OF INFO -->
+            <div class="row justify-content-center mb-5" id="one">
+                <!-- BEGIN MAP -->
+                <div class="col-10">
+                    <!-- Title -->
+                    <h3 id="mapHeaderTitle"></h3>
+                    <!-- Placeholder image of map -->
+                    <div class="row" id="mapHere">
+                    
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SECOND ROW OF DATA -->
+            <div class="row">
+
+                <div class="col-md-4 barInfo">
+                    <div id="text">
+                    <h4> Selected Location </h4>
+                    <h6 class="m-0" id="bar-name">Name of bar</h6>
+                    <p class="m-0" id="bar-rating">Google rating: </p>
+                    <p class="m-0" id="bar-addr">Address: 1234 Street</p>
+
+                    <!-- <a href="#" target="_blank" class="btn btn-primary" id="directions-btn">Get Directions</a> -->
+                    <button type="button" class="btn btn-secondary" id="directions-btn">Directions</button>
+                </div>
+                </div>
+                <!-- BEGIN TABLE -->
+                <div class="col-md-8 offset-md-1 table-responsive-sm" id="crimeTable">
+                    <!-- Title -->
+                    <h4 id="crimeDataTitle">Click a Place Above for Reported Crime Data</h4>
+                    <p>All crime listed were reported within .25 miles from selected restaurant</p>
+                    <table class="table">
+                        <!-- Begin table head -->
+                        <thead>
+                            <tr>
+                                <th scope="col" class="column">Type of Crime</th>
+                                <th scope="col" class="column">Location</th>
+                                <th scope="col" class="column">Date</th>
+                                <th scope="col" class="column">Time</th>
+
+                            </tr>
+                        </thead>
+                        <!-- Begin table body -->
+                        <tbody id= "crimediv">
+                            <tr>
+                                <td id="crimetype"> Tell me the Crime! </td>
+                                <td id="crimelocation"> Block Name and Number  </td>
+                                <td id="crimedate"> What day did it happen?  </td>
+                                <td id="crimetime"> When time of day? </td>
+
+                        </tbody>
+                        <!-- End table -->
+                    </table>
+                </div>
+            </div>
+
+            <div>
+                <br><br>
             </div>
         </div>
     </div>
-</div>
+    </div>
+    <!-- END DISPLAY PAGE -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
+
+
 
 </body>
 
-</html>
+</HTML>

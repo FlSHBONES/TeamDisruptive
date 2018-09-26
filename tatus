@@ -1,0 +1,264 @@
+[33mcommit fc2ccba82d4d527eee5bc50ca809c6487f14e402[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Wed Sep 26 00:52:27 2018 -0400
+
+    merged the updates, in the final stretch!
+
+[33mcommit dff499c1314cec9d0066db02e7ebc90093267180[m
+Merge: d00b8e3 50fdbc0
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Wed Sep 26 00:25:40 2018 -0400
+
+    hopefully successful merge?
+
+[33mcommit d00b8e309a34dc8e23a300d83a217c540e4529ca[m[33m ([m[1;31morigin/feature/tim2[m[33m, [m[1;32mfeature/tim2[m[33m)[m
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Wed Sep 26 00:18:40 2018 -0400
+
+    So close - updating script for beer and crime search
+
+[33mcommit 50fdbc0d996a39f93aa676f582a942f51998ef88[m
+Merge: abed041 eabd976
+Author: A-Engman <anders.p.engman@gmail.com>
+Date:   Tue Sep 25 21:33:26 2018 -0400
+
+    Merge branch 'develop' of https://github.com/FlSHBONES/TeamDisruptive into develop
+
+[33mcommit abed0418f6d957fee1b9f0ee44fb51a552ed283d[m
+Author: A-Engman <anders.p.engman@gmail.com>
+Date:   Tue Sep 25 21:33:17 2018 -0400
+
+    Fixing Dupe Logins
+
+[33mcommit eabd9769a4a6d4c3d7e3c2cc18ea68d2856c832e[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Tue Sep 25 21:24:18 2018 -0400
+
+    edit html
+
+[33mcommit 1650294040c0de3e5b0f66ae674e5479361cd587[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Tue Sep 25 21:23:34 2018 -0400
+
+    edit styles
+
+[33mcommit bcb87f802016e6d9668d62c2815a607a05d5ca2f[m
+Author: A-Engman <anders.p.engman@gmail.com>
+Date:   Tue Sep 25 20:54:04 2018 -0400
+
+    Auth Completed
+
+[33mcommit d84c602e7b0888ce6e6af057d2c2810dedd4b8e6[m
+Merge: c6ee885 b47b7f4
+Author: A-Engman <anders.p.engman@gmail.com>
+Date:   Tue Sep 25 20:37:40 2018 -0400
+
+    Merge branch 'develop' of https://github.com/FlSHBONES/TeamDisruptive into develop
+
+[33mcommit c6ee8854df9949da2c91f160dfd822b19936213e[m
+Author: A-Engman <anders.p.engman@gmail.com>
+Date:   Tue Sep 25 20:36:27 2018 -0400
+
+    Fixed some User Registration Issues
+
+[33mcommit 7fa62726e67df8c3834095421bb5ea1eacdf8325[m
+Author: A-Engman <anders.p.engman@gmail.com>
+Date:   Tue Sep 25 20:29:29 2018 -0400
+
+    Additions to logic file; disabled users from creating many duplicate profiles easily
+
+[33mcommit b47b7f428382d448853e452b5b9de7750081acb5[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Tue Sep 25 20:29:04 2018 -0400
+
+    updates
+
+[33mcommit 03217d8986a01c06a8cb30aaae81ba2b4aa10913[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Tue Sep 25 20:28:52 2018 -0400
+
+    update id
+
+[33mcommit 446b249606d551b6c65cc431159ff8945fd3eeff[m
+Author: Daland Dixon <dalanddixon@Dalands-MacBook-Pro.local>
+Date:   Tue Sep 25 19:58:28 2018 -0400
+
+    Daland's Commit
+
+[33mcommit ff60152043f4e3b673925528544766b27f9a98ac[m
+Author: Daland Dixon <dalanddixon@Dalands-MacBook-Pro.local>
+Date:   Tue Sep 25 19:15:28 2018 -0400
+
+    yeah commits
+
+[33mcommit e069071ed2ffb0cb9c4bc8fec76111e79f86c238[m
+Author: Daland Dixon <dalanddixon@Dalands-MacBook-Pro.local>
+Date:   Tue Sep 25 18:42:57 2018 -0400
+
+    Trying again
+
+[33mcommit 2e131e1e355dfbf4bbe316b52cccceec6403c594[m
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Mon Sep 24 22:43:56 2018 -0400
+
+    updated Readme.md with a bunch of crap
+
+[33mcommit e7fa871ed2cb2c9edd326db48df5208deb689ab4[m
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Mon Sep 24 22:19:24 2018 -0400
+
+    added TODOs in the index.html as guidance for tomorrow class
+
+[33mcommit 4375b36b0760159ed339476c94ae1a04b02bbaea[m
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Mon Sep 24 22:08:44 2018 -0400
+
+    show me the crime
+
+[33mcommit 435799eb092bd6a188953184c8f08c58b3f9567a[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Sun Sep 23 21:56:55 2018 -0400
+
+    merge html pages
+
+[33mcommit 5f7ce30e6907e7cf6234dd24a5f0e9e6a31d165e[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Sun Sep 23 12:43:51 2018 -0400
+
+    edit table
+
+[33mcommit d43d7b6b8317e8d72b6e29fabd3b87abc09f67e4[m
+Author: A-Engman <anders.p.engman@gmail.com>
+Date:   Sat Sep 22 14:45:07 2018 -0400
+
+    Add Users Functional, Login In Progress
+
+[33mcommit 840e25ea908303135455d5560bca5f5de9d3c182[m
+Author: Daland Dixon <dalanddixon@Dalands-MacBook-Pro.local>
+Date:   Sat Sep 22 13:20:40 2018 -0400
+
+    push push push
+
+[33mcommit 5bdd1ee5f5a1a91d2331f292c8797091ad56465c[m
+Merge: f6a3740 16d27ec
+Author: Daland Dixon <dalanddixon@Dalands-MacBook-Pro.local>
+Date:   Sat Sep 22 12:17:20 2018 -0400
+
+    API Finally Works
+
+[33mcommit f6a3740d4257d82f8a7195bb7bec992fd9fcd13d[m
+Author: Daland Dixon <dalanddixon@Dalands-MacBook-Pro.local>
+Date:   Sat Sep 22 11:54:00 2018 -0400
+
+    API Works Hooray
+
+[33mcommit 16d27ec9f4d30dfc402b9c0c9324dfa34fb47a2d[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Sat Sep 22 10:07:46 2018 -0400
+
+    updated display layout
+
+[33mcommit 5c1ca9675440b7bc71d2ce1d6fdd1c973be7f36b[m
+Author: Daland Dixon <dalanddixon@Dalands-MacBook-Pro.local>
+Date:   Thu Sep 20 19:42:50 2018 -0400
+
+    Daland again
+
+[33mcommit 41a4d7fdb02ba0a5142e8f7a8b6e39090a335c67[m[33m ([m[1;31morigin/AuthBranch[m[33m)[m
+Merge: 24dd4ef 18e0e93
+Author: FlSHBONES <40770750+FlSHBONES@users.noreply.github.com>
+Date:   Thu Sep 20 19:23:57 2018 -0400
+
+    Merge pull request #7 from FlSHBONES/develop
+    
+    Develop -
+
+[33mcommit 18e0e931425918de1bac05922d0650b93edc7c80[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Thu Sep 20 18:40:36 2018 -0400
+
+    updated pages
+
+[33mcommit 24dd4ef37d6c94e299ee1922284b81a3501e411d[m
+Merge: 63ed00b 1f831d0
+Author: FlSHBONES <40770750+FlSHBONES@users.noreply.github.com>
+Date:   Tue Sep 18 19:56:54 2018 -0400
+
+    Merge pull request #2 from FlSHBONES/create-html-skeleton-t
+    
+    add index.html
+
+[33mcommit 63ed00bbd7cd2daed6e95293eecf25c71249a2cb[m
+Merge: b061e6a 029eb24
+Author: FlSHBONES <40770750+FlSHBONES@users.noreply.github.com>
+Date:   Tue Sep 18 19:56:26 2018 -0400
+
+    Merge pull request #4 from FlSHBONES/great-project-greater-team
+    
+    Branch Commit
+
+[33mcommit 8585d511be565c10d33af4b35dbf341664d38ce3[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Tue Sep 18 19:55:44 2018 -0400
+
+    commit 2
+
+[33mcommit b061e6ae06325e8793dfaa78aa2b9e2217716768[m
+Merge: 2067056 88751b0
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Tue Sep 18 19:50:25 2018 -0400
+
+    Merge branch 'develop'
+
+[33mcommit 88751b0827691ebe630d3f837a78ba27bc0d1de5[m
+Author: brooke <brooke.mitchell@comcast.net>
+Date:   Tue Sep 18 19:32:59 2018 -0400
+
+    first commit
+
+[33mcommit b3d8924358c0076c7a92618d9a2dc6c0d28d9ce6[m
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Sat Sep 15 11:21:24 2018 -0400
+
+    update for Daland to review
+
+[33mcommit 20670561acd3695e1829b05d2967fc655f8feb0a[m
+Merge: ef82b9a 729ca78
+Author: FlSHBONES <40770750+FlSHBONES@users.noreply.github.com>
+Date:   Sat Sep 15 11:08:28 2018 -0400
+
+    Merge pull request #3 from FlSHBONES/create-html-skeleton
+    
+    adding index.html
+
+[33mcommit ef82b9a52dc789f7faa4ff917f4460f6f9ea69fe[m
+Author: FlSHBONES <40770750+FlSHBONES@users.noreply.github.com>
+Date:   Sat Sep 15 11:04:17 2018 -0400
+
+    Add index.html (#1)
+    
+    squashed
+
+[33mcommit 029eb2447d39475d028eb466a9e819986311f336[m
+Author: A-Engman <anders.p.engman@gmail.com>
+Date:   Sat Sep 15 11:04:02 2018 -0400
+
+    Branch Commit
+
+[33mcommit 1f831d06c67f9af156c246d1392e57b775bfd30c[m[33m ([m[1;31morigin/create-html-skeleton-t[m[33m)[m
+Author: TFisher <tgfisher26@gmail.com>
+Date:   Sat Sep 15 11:00:07 2018 -0400
+
+    add index.html
+
+[33mcommit 729ca789e06d806258026ca29d61e6092820b104[m[33m ([m[1;31morigin/create-html-skeleton[m[33m)[m
+Author: Daland Dixon <dalanddixon@Dalands-MacBook-Pro.local>
+Date:   Sat Sep 15 10:58:49 2018 -0400
+
+    adding index.html
+
+[33mcommit bdeeb3b089fe2e3839db901c871dff002ef0525b[m
+Author: FlSHBONES <40770750+FlSHBONES@users.noreply.github.com>
+Date:   Thu Sep 13 18:43:04 2018 -0400
+
+    Initial commit
