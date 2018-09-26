@@ -80,13 +80,7 @@ var config = {
         console.log(verifyPassword);
     
         if (password != verifyPassword) {
-<<<<<<< HEAD
-          return console.log('passwords do not match')
-          
-                   
-=======
           console.log('passwords do not match')
->>>>>>> 50fdbc0d996a39f93aa676f582a942f51998ef88
         }
     
         if ((document.getElementById("ageCheck").checked) == true) {
