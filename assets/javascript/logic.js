@@ -47,8 +47,11 @@ var config = {
             if (childData.userName === userName) {
               console.log("Username Located");
               if (childData.password === password) {
+                $('.enableOnInput').prop('disabled', false);
                 console.log("Login Successful");
+                
               } else if (childData.password != password) {
+                $('.enableOnInput').prop('disabled', true);
                 console.log("Password is Incorrect");
               }
             } else {
