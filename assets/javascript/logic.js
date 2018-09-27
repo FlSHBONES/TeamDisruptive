@@ -73,9 +73,7 @@ var config = {
         if (!userName || !password) {
             console.log('username and password required')
         }
-       
-          
-         
+    
         console.log(password);
         console.log(verifyPassword);
     
@@ -88,25 +86,6 @@ var config = {
         } else {
           console.log('Please Verify Age')
         }
-
-        var userRef2 = database.ref('userBase');
-        userRef2.on('value', function(snapshot) {
-          snapshot.forEach(function(childSnapshot) {
-            var childData2 = childSnapshot.val();
-            console.log(childData2);
-            
-            if (childData2.userName === userName) {
-              dupeUser = true;
-              console.log("Duplicate Username Detected");
-            };
-          });
-        });
-
-        // TO DO:
-        //  1) Make dupeUser function properly
-        //    - Make sure new users can be added while dupe users cannot
-        //
-        //
     
         console.log(userName);
         console.log(password);
@@ -115,20 +94,18 @@ var config = {
         console.log(userName);
         console.log(verifyPassword);
     
-        if (dupeUser = false) {
-          database.ref("/userBase").push ({
-            password: password,
-            firstName: firstName,
-            lastName: lastName,
-            userName: userName
-          });
-        } else if (dupeUser = true) {
-          console.log("User Add Prevented");
-        }
+
+        database.ref("/userBase").push ({
+          password: password,
+          firstName: firstName,
+          lastName: lastName,
+          userName: userName
+        });
+
 
         console.log("new user added");
         userAdded = true;
-        
+
       } else if (userAdded === true) {
         console.log("Not today mofucka")
       }
