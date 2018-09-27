@@ -16,8 +16,15 @@ $(document).ready(function () {
     $("#displayPage").hide()
 
 
+    $("#signOut").on("click", function () {
+        $('.enableOnInput').prop('disabled', true);
+        $(".splashPage").show()
+        $(".locationPage").hide()
+        $("#displayPage").hide()
+        
+    });
 
-    $("#submit2").on("click", function () {
+    $("#submit2").on("click", function () { 
 
         console.log("hello")
         console.log($("#inputLocation").val().trim())
