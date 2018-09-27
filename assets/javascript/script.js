@@ -16,6 +16,11 @@ $(document).ready(function () {
     $("#displayPage").hide()
 
 
+    $("#signOut").on("click", function () {
+        $(".splashPage").show()
+        $(".locationPage").hide()
+        $("#displayPage").hide()
+    });
 
     $("#submit2").on("click", function () {
 
