@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+   
     // ==========================================
 
     // AIzaSyAYaTv-hKyNAp7NAQ1mKdP_F5-vpkfouoU
@@ -13,10 +13,24 @@ $(document).ready(function () {
         window.open("https://www.google.com/maps/dir/?api=1&destination=" + destination + "+Philadelphia+PA" + "&destination_place_id=" + placeID);
     });
 
+
+     // locking the submit for input validaton
+    //  $(function () {
+    //     $('#inputPassword').keyup(function () {
+    //         if ($(this).val() == '') {
+    //             $('.enableOnInput').prop('disabled', true);
+    //         } else {
+    //             $('.enableOnInput').prop('disabled', false);
+    //         }
+    //     });
+    // }); 
+
     $(".splashPage").show()
     $(".locationPage").hide()
     $("#displayPage").hide()
-
+    
+    
+    
     $("#submit2").on("click", function () {
 
         console.log("hello")
@@ -24,11 +38,12 @@ $(document).ready(function () {
 
         $(".splashPage").hide()
         $(".locationPage").show()
-        $("#displayPage").show()
+        $("#displayPage").hide()
     });
 
     $("#loc-submit").on("click", function () {
-
+        $(".locationPage").show()
+        $("#displayPage").show()
         console.log("hello")
         console.log($("#inputLocation").val().trim())
         $("#mapHere").empty();
@@ -88,9 +103,9 @@ $(document).ready(function () {
                     $(listItem).html(str);
                 };
 
-                if (response2.results.length >= 18) {
+                if (response2.results.length >= 12) {
 
-                    for (var i = 0; i < 18; i++) {
+                    for (var i = 0; i < 12; i++) {
                         loop();
                     }
                 } else {

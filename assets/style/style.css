@@ -111,13 +111,6 @@ hr {
     text-align: center;
 }
 
-/* body {
-    background-image: url('../images/city-peds-3.png');
-    background-image: url('../images/wya.png');
-    background-size: cover;
-    background-position-y: 2%;
-} */
-
 .navbar {
 background-color: rgb(32, 32, 32, 0.9);
 }
@@ -215,36 +208,17 @@ a {
 }
 
 #crimeTable {
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
     /* padding-bottom: 5%; */
     /* padding-top: 5%; */
     background-color: rgb(71, 71, 71);
     margin-top: 0px;
-}
-
-
-
-/* 
-#historyTable {
-    margin: auto;
-    padding-bottom: 5%;
     padding-top: 5%;
-    background-color: orange;
-    width: 75%;
-}
-
-#historyTableContainer {
-    background-color: orange;
-    padding: 100px;
-} */
-
-#crimeTable {
+    padding-bottom: 5%;
     color: white !important;
-    padding: 93px;
-    background-color: rgb(71, 71, 71);
-
 }
+
 
 #crimeDataTitle {
     color: white;
@@ -267,10 +241,19 @@ a {
 
 #text {
     margin: auto;
-padding-top: 125px;
+padding-top: 80px;
 padding-left: 25px;
 }
 
 #directions-btn {
     margin-top: 5%;
+}
+
+.dropdown-toggle {
+background-color: transparent;
+border: none;
+}
+
+.fa {
+    font-size: 25px;
 }
