@@ -1,5 +1,20 @@
 # TeamFirebase
 
+
+26SEP2018 @ 11:37PM - Tim
+
+Rev 1 submitted.
+
+Includes:
+
+Working authentication, cleaned up aesthetics, MVP (beer and fear) retrievable, and looks super good.
+
+Doing last pass to clean up notes / comments.  Will push to dev, then master.  Good Job Everyone!!!
+
+
+
+
+
 24SEP20188 @ 10:20 PM - Tim
 
 -Updated index.html to have working crime function.
