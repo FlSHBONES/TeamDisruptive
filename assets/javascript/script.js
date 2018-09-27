@@ -1,10 +1,6 @@
 $(document).ready(function () {
-   
-    // ==========================================
 
-    // AIzaSyAYaTv-hKyNAp7NAQ1mKdP_F5-vpkfouoU
 
-    // ==========================================
 
     var destination;
     var placeID;
@@ -14,23 +10,13 @@ $(document).ready(function () {
     });
 
 
-     // locking the submit for input validaton
-    //  $(function () {
-    //     $('#inputPassword').keyup(function () {
-    //         if ($(this).val() == '') {
-    //             $('.enableOnInput').prop('disabled', true);
-    //         } else {
-    //             $('.enableOnInput').prop('disabled', false);
-    //         }
-    //     });
-    // }); 
 
     $(".splashPage").show()
     $(".locationPage").hide()
     $("#displayPage").hide()
-    
-    
-    
+
+
+
     $("#submit2").on("click", function () {
 
         console.log("hello")
@@ -47,7 +33,7 @@ $(document).ready(function () {
         console.log("hello")
         console.log($("#inputLocation").val().trim())
         $("#mapHere").empty();
-       
+
 
         // ============ TEXT SEARCH =================
         // finds the latitude and longitude of the location
@@ -130,9 +116,7 @@ $(document).ready(function () {
 
                     function showmethecrime() {
 
-                        // TDO Latitude and longitude data will be equal to lat and lng output by Dalands API query.  This needs to A. go into his script and B. pull the lat and lng of the clicked restaurant. As shown below, if event handler cant be written to get bar Lat and Lng, we do a mile of the searched location.
-                        // lat = $(this).attr("lat");
-                        // lng = $(this).attr("lng");
+
                         console.log(lat2)
                         console.log(lng2)
                         // Querying the phl api for incident data.
@@ -149,7 +133,7 @@ $(document).ready(function () {
                             console.log(response.rows.length);
 
                             var end = response.rows.length - 1;
-                            for (let i = end; i >= end - 4; i--) {
+                            for (let i = end; i >= end - 6; i--) {
                                 console.log(response.rows[i]);
                                 //Crime 1 (most recent)
                                 var crime1type = response.rows[i].text_general_code;
@@ -176,7 +160,12 @@ $(document).ready(function () {
                                 var crime5location = response.rows[i - 4].location_block;
                                 var crime5date = response.rows[i - 4].dispatch_date;
                                 var crime5time = response.rows[i - 4].dispatch_time;
-
+                                //Crime 6-----------------------------------------------------
+                                var crime6type = response.rows[i - 5].text_general_code;
+                                var crime6location = response.rows[i - 5].location_block;
+                                var crime6date = response.rows[i - 5].dispatch_date;
+                                var crime6time = response.rows[i - 5].dispatch_time;
+                                
                             }
 
                             console.log(crime1type);
@@ -204,6 +193,14 @@ $(document).ready(function () {
                             console.log(crime5date);
                             console.log(crime5time);
                             console.log("--------");
+                            console.log(crime6type);
+                            console.log(crime6location);
+                            console.log(crime6date);
+                            console.log(crime6time);
+                            console.log("--------");
+                          
+
+
 
 
 
@@ -245,11 +242,21 @@ $(document).ready(function () {
                                 $("<td>").text(crime5location),
                             );
 
+                            var newRow6 = $("<tr>").append(
+                                $("<td>").text(crime6type),
+                                $("<td>").text(crime6date),
+                                $("<td>").text(crime6time),
+                                $("<td>").text(crime6location),
+                            );
+                        
+
                             $("#crimediv").append(newRow1);
                             $("#crimediv").append(newRow2);
                             $("#crimediv").append(newRow3);
                             $("#crimediv").append(newRow4);
                             $("#crimediv").append(newRow5);
+                            $("#crimediv").append(newRow6);
+                            
 
 
                         });
